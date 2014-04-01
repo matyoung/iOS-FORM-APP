@@ -1,7 +1,7 @@
 
 
 body {
-	background: /* url('../img/hand.png') no-repeat center, */ -webkit-radial-gradient(bottom, #35464f 0%, #020a0d 100%) !important;}
+	background:  -webkit-radial-gradient(center, #215286 30%, #173b61 60%, #071a42 100%)   !important; }
 
 @font-face {
 	font-family: Antenna-Medium;
@@ -22,6 +22,16 @@ h1,h2,h3,h4,h5, .button {
 	font-family: "Antenna-Medium", sans-serif;
 }
 
+div.fayft {
+	padding: 3.5em 1.5em 0 0;
+}
+
+
+
+h3.fayft {
+	font-size: 2.2em;
+	line-height: 1em;
+}
 
 p {
 	color: #dadada;
