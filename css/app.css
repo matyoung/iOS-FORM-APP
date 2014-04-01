@@ -13,6 +13,11 @@ body {
 	src: url(Antenna-Regular.otf);
 }
 
+@font-face {
+	font-family: Antenna-Light;
+	src: url(FordAntenna-Thin.otf);
+}
+
 body
 
 
@@ -91,21 +96,21 @@ label {
 .vehicle-list li{
 	float: left;
 	font-size: .8em;
-	line-height: 2.5em;
+	line-height: 1.5em;
 	width: 33.33%;
 	
 }
 
-.question-list {
+.question-list input{
 	margin: 0px !important;
 	line-height: .8em !important;
 	font-size: .8em !important;
-	
-
 }
 
-.question-list li{
-
+.question-list label{
+	font-size: 1em !important;
+	font-weight: 100;
+	letter-spacing: .1em;
 }
 
 
