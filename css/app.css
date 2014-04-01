@@ -101,6 +101,11 @@ label {
 	
 }
 
+.privacy {
+	height: 750px;
+	overflow: scroll;
+}
+
 .question-list input{
 	margin: 0px !important;
 	line-height: .8em !important;
@@ -113,6 +118,18 @@ label {
 	letter-spacing: .1em;
 }
 
+a.close-reveal-modal {
+	font-weight: 500 !important;
+	float: none !important;
+	color: #fff !important;
+}
+
+.reveal-modal {
+	top: 158px;
+	background:  -webkit-radial-gradient(center, #215286 30%, #173b61 60%, #071a42 100%)   !important; 
+	border: none;
+	
+}
 
 
 
