@@ -98,19 +98,46 @@ label {
 	font-weight: 100;
 	font-family: "Antenna", sans-serif;
 	color: #dadada;
+	margin-right: 0px !important;
 }
 
 .vehicle-list, .question-list {
 	list-style: none;
 }
 
+ul.vehicle-list  {
+	margin-left: 0px !important;
+}
+
 .vehicle-list li{
 	float: left;
 	font-size: .8em;
 	line-height: 1.5em;
-	width: 33.33%;
+	width: 33%;
 	
 }
+
+input[type="checkbox"] {
+	padding: 12px;
+	border: 1px solid #dadada;
+	color: #fff;
+	background: #fff;
+	border-radius: 0px;
+	margin: 0px;
+}
+
+input[type="radio"] {
+	padding: 12px;
+	background: #fff;
+	border: 1px solid #dadada;
+	margin: 0px;
+}
+
+		input[type="radio"]:checked {
+			color: #000 !important;
+			background: #190d0d;
+
+		}
 
 .privacy {
 	height: 750px;
