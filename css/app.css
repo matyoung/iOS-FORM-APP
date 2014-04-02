@@ -1,5 +1,10 @@
 body {
-	background:  -webkit-radial-gradient(center, #215286 30%, #173b61 60%, #071a42 100%)   !important; }
+	background:  -webkit-radial-gradient(center, #215286 30%, #173b61 60%, #071a42 100%)   !important; 
+}
+
+body#launch {
+	background:  -webkit-radial-gradient(center, #464c53 0%, #08090e 100%)   !important; 
+}
 
 @font-face {
 	font-family: Antenna-Medium;
@@ -169,6 +174,15 @@ a.close-reveal-modal {
 	
 }
 
+.event-identifier {
+	z-index: 999999;
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	font-size: 10px;
+	color: #b4b4ac;
+	letter-spacing: .2em
+}
 
 
 
