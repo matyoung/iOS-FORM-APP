@@ -1,0 +1,42 @@
+@font-face {
+	font-family: Antenna-Medium;
+	src: url(Antenna-Medium.otf);
+}
+
+@font-face {
+	font-family: Antenna;
+	src: url(Antenna-Regular.otf);
+}
+
+@font-face {
+	font-family: Antenna-Light;
+	src: url(FordAntenna-Thin.otf);
+}
+
+body {
+	
+}
+
+header {
+	background:  -webkit-radial-gradient(center, #215286 30%, #173b61 60%, #071a42 100%)   !important; 
+	padding: 20px 20px;
+	margin: 0 0 20px 0;
+}
+
+h1 {
+	color: #fafafa;
+	padding: 10px 0 0 0;
+}
+
+h1,h2,h3,h4,h5,p, .button {
+	font-weight: 500;
+	font-family: "Antenna-Medium", sans-serif;
+}
+
+.button {
+	color: #fff;
+}
+
+.button.green {
+	background: #138622
+}
