@@ -30,6 +30,10 @@ h1,h2,h3,h4,h5, .button {
 	font-family: "Antenna-Medium", sans-serif;
 }
 
+h5 small {
+	color: #dadada;
+}
+
 div.fayft {
 	padding: 3.5em 1.5em 0 0;
 }
