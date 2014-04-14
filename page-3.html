@@ -1,162 +1,268 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-	  <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
-
 </head>
-  <body id="page-3">
-    
+<body id="page-3" ontouchmove="BlockMove(event);">
+
     <div class="row">
-      <div id="header" >
-      <a href="#" class="close-button">X</a>
-  			<div class="small-3 columns">
-    			<span class="left"><br /><br />
-      			<img src="img/logo.png" alt="logo" >
-					</span>
-				</div>
-				
-        <div class="small-9 columns fayft">
-	        <img class="right" src="img/hand.png" alt="hand" width="60" >
-	        <h3 class="right fayft">Ford At Your<br />Fingertips</h3>
+        <div id="header">
+            <a href="page-1.html" class="close-button">X</a>
+            <div class="small-3 columns">
+                <span class="left">
+                    <br />
+                    <br />
+                    <img src="img/logo.png" alt="logo">
+                </span>
+            </div>
+
+            <div class="small-9 columns fayft">
+                <h3 class="right fayft">REGISTRATION</h3>
+		            <p class="right">Please speak to a Ford Representative if you need any help.</p>
+            </div>
         </div>
-      </div>
-	    <hr/>
+        <hr />
     </div>
-    
+
     <div class="row	">
-    	<div class="small-11 small-centered columns">
-    		<h1>CONFIRM DETAILS</h1>
-    		<p class="instructions">Please speak to a Ford Representative if you need any help.</p>
-    		<br />
-<!--FORM STARTS HERE -->
+        <div class="small-11 small-centered columns">
+            <h1>CONFIRM DETAILS</h1>
+            <hr>
+            <!--FORM STARTS HERE -->
 
-						<form >
-								<div class="row">
-										<div class="small-1 columns"><input id="" type="checkbox" class="checkbox"></div>
-										<div class="small-11 columns"><label for=""><p>* Yes, I'm 18 years of age or older.</p></label></div>
-								</div>
-								<div class="row">	
-										<div class="small-1 columns"><input id="" type="checkbox" class="checkbox"></div>
-										<div class="small-11 columns"><label for=""><p>* I have read and agree to the <a data-reveal-id="privacy" data-reveal>Privacy Statement</a></p></label></div>
-								</div>
-								
-										<!--privacy modal -->
-								    
-								    <div id="privacy" class="reveal-modal xlarge" data-reveal>
-											<div class="row">
-												<div class="small-12 columns privacy">
-													<p>Privacy</p>
-													<p>Your California Privacy Rights</p>
-													<p>See below for the Privacy Policy Effective 03/11/2012.</p>
-													
-													<p>1. General Statement:</p>
-													
-													<p>We respect your privacy and are committed to protecting it. This privacy statement explains our policies and practices regarding on-line customer information. It is through this disclosure that we intend to provide you with a level of comfort and confidence in how we collect, use, and safeguard personal and other information we collect or that you provide through this website, and how you can contact us if you have any questions or concerns. It is our sincere hope that by explaining our data handling practices we will develop a trusting and long-lasting relationship with you. By using the site, you agree to the terms of this privacy statement.</p>
-													
-													<p>2. Information About Our Organization and Website:</p>
-													
-													<p>This Privacy Statement applies to www.ford.com and its related mobile site, which are owned and maintained by Ford Motor Company, Marketing, Sales and Service Division, 16800 Executive Plaza Drive, Dearborn, MI 48126. This site also contains certain micro-sites which may be administered by a third-party on behalf of Ford such as warriorsinpink.com.</p>
-													
-													<p>The business purpose of this website is to: (1) provide visitors with knowledge of the features and benefits of the complete line of cars, crossovers, SUVs and trucks; and (2) provide visitors with purchasing-related information such as available incentives, services, product inventory and dealership contacts, (3) provide visitors the opportunity to enter sweepstakes and purchase items and 4) provide you the opportunity to share your story regarding a Ford Motor Company product.</p>
-													
-													<p>On certain portions of this website, you may have the opportunity to request information or a contact from your local dealer through various shopping tools. These shopping tools include Build and Price, Search Dealer Inventory, Request a Local Quote, and Trade-in Value. When you provide your personal information in those instances, it is collected by FordDirect, an independent company that assists our dealers. If you choose to provide your personal information to FordDirect, please note that it will be subject to the Privacy Policy of FordDirect.</p>
-												</div>
-											</div> 
-											<div class="row">
-												<div class="small-12 columns small-centered">
-													<a class="close-reveal-modal button large radius">Close</a>
-												</div>
-											</div>
-										</div>
-										
-										<!--privacy modal -->
-										
-										
-								<div class="row">
-										<div class="small-1 columns"><input id="" type="checkbox" class="checkbox"></div>
-										<div class="small-11 columns"><label for=""><p>Please email me communications including product information, offers, and incentives from Ford Motor Company and the local dealer.</p></label></div>
-								</div>
-								
-								<div class="row">
-									<div class="small-12 columns">
-										<h5><strong>Receive More information</strong> <br /><small >(Note: Requesting information from Ford Motor Company will not increase yoru chances of winning)</small></h5>
-									</div>
-									<div class="small-12 columns">
-										<p>Please indicate the vehicle(s) of interest. You may select up to three.</p>
-										
-<!--vehicle list -->
-										<ul class="vehicle-list">
-												<li><input id="" type="checkbox" class="checkbox"> <label>C-Max Energi					</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>C-Max Hybrid					</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>E-Series							</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Edge									</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Escape								</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Expedition						</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Explorer							</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>F-150								  </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Fiesta								</label></li>
-												
-												<li><input id="" type="checkbox" class="checkbox"> <label>Flex									</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Focus 								</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Focus Electric				</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Focus ST							</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Fusion								</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Fusion Energi				  </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Fusion Hybrid				  </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Mustang							  </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Super Duty&reg;			  </label></li>
-												
-												<li><input id="" type="checkbox" class="checkbox"> <label>Taurus								</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Transit Connect			  </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Transit Connect Wagon </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>Transit							  </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>2015 Expedition			  </label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>2015 F-150						</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>2015 Focus						</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>2015 Mustang					</label></li>
-												<li><input id="" type="checkbox" class="checkbox"> <label>2015 Super Duty&reg;	</label></li>		
-										</ul>
-<!--vehicle list -->
-										
-										<hr/>
-										
-									</div>
-								</div>
-						<div class="row">
-				    	<div class="small-4 columns small-offset-8">
-				    		<a href="page-4.html" class="button radius right" >Next</a>
-				    	</div>
-		      </div>
+            <form>
+                <div class="row">
+                    <div class="small-1 columns">
+                        <input id="is18" type="checkbox" class="checkbox" data-bind="checked: is18YrsOrOlder" /></div>
+                    <div class="small-11 columns">
+                        <label for="is18">
+                            <p>* Yes, I'm 18 years of age or older.</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-1 columns">
+                        <input id="privacyStatement" type="checkbox" class="checkbox" data-bind="checked: hasReadPrivacy" /></div>
+                    <div class="small-11 columns">
+                        <label for="privacyStatement">
+                            <p>* I have read and agree to the <a data-reveal-id="privacy" data-reveal>Privacy Statement</a></p>
+                        </label>
+                    </div>
+                </div>
 
-						</form>
+                <!--privacy modal -->
 
-<!--FORM ENDS HERE -->
-    		
-    	</div>
+                <div id="privacy" class="reveal-modal xlarge" data-reveal>
+                    <div class="row">
+                        <div class="small-12 columns privacy">
+                            <p>Privacy</p>
+                            <p>Your California Privacy Rights</p>
+                            <p>See below for the Privacy Policy Effective 03/11/2012.</p>
+
+                            <p>1. General Statement:</p>
+
+                            <p>We respect your privacy and are committed to protecting it. This privacy statement explains our policies and practices regarding on-line customer information. It is through this disclosure that we intend to provide you with a level of comfort and confidence in how we collect, use, and safeguard personal and other information we collect or that you provide through this website, and how you can contact us if you have any questions or concerns. It is our sincere hope that by explaining our data handling practices we will develop a trusting and long-lasting relationship with you. By using the site, you agree to the terms of this privacy statement.</p>
+
+                            <p>2. Information About Our Organization and Website:</p>
+
+                            <p>This Privacy Statement applies to www.ford.com and its related mobile site, which are owned and maintained by Ford Motor Company, Marketing, Sales and Service Division, 16800 Executive Plaza Drive, Dearborn, MI 48126. This site also contains certain micro-sites which may be administered by a third-party on behalf of Ford such as warriorsinpink.com.</p>
+
+                            <p>The business purpose of this website is to: (1) provide visitors with knowledge of the features and benefits of the complete line of cars, crossovers, SUVs and trucks; and (2) provide visitors with purchasing-related information such as available incentives, services, product inventory and dealership contacts, (3) provide visitors the opportunity to enter sweepstakes and purchase items and 4) provide you the opportunity to share your story regarding a Ford Motor Company product.</p>
+
+                            <p>On certain portions of this website, you may have the opportunity to request information or a contact from your local dealer through various shopping tools. These shopping tools include Build and Price, Search Dealer Inventory, Request a Local Quote, and Trade-in Value. When you provide your personal information in those instances, it is collected by FordDirect, an independent company that assists our dealers. If you choose to provide your personal information to FordDirect, please note that it will be subject to the Privacy Policy of FordDirect.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 columns small-centered">
+                            <a class="close-reveal-modal button large radius">Close</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--privacy modal -->
+
+
+                <div class="row">
+                    <div class="small-1 columns">
+                        <input id="optIn" type="checkbox" class="checkbox" data-bind="checked: optInEmail" /></div>
+                    <div class="small-11 columns">
+                        <label for="optIn">
+                            <p>Please email me communications including product information, offers, and incentives from Ford Motor Company and the local dealer.</p>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="small-12 columns">
+                        <h5><strong>Receive More information</strong>
+                            <br />
+                            <small>(Note: Requesting information from Ford Motor Company will not increase yoru chances of winning)</small></h5>
+                    </div>
+                    <div class="small-12 columns">
+                        <p>Please indicate the vehicle(s) of interest. You may select up to three.</p>
+
+                        <!--vehicle list -->
+                        <ul class="vehicle-list">
+                            <li>
+                                <input id="chk1" type="checkbox" class="checkbox" value="129" data-bind="click: function () { return  selectVehicle('chk1') }" />
+                                <label for="chk1">C-Max Energi					</label>
+                            </li>
+                            <li>
+                                <input id="chk2" type="checkbox" class="checkbox" value="128" data-bind="click: function () { return  selectVehicle('chk2') }" />
+                                <label for="chk2">C-Max Hybrid					</label>
+                            </li>
+                            <li>
+                                <input id="chk3" type="checkbox" class="checkbox" value="009" data-bind="click: function () { return  selectVehicle('chk3') }" />
+                                <label for="chk3">E-Series							</label>
+                            </li>
+                            <li>
+                                <input id="chk4" type="checkbox" class="checkbox" value="100" data-bind="click: function () { return  selectVehicle('chk4') }" />
+                                <label for="chk4">Edge									</label>
+                            </li>
+                            <li>
+                                <input id="chk5" type="checkbox" class="checkbox" value="053" data-bind="click: function () { return  selectVehicle('chk5') }" />
+                                <label  for="chk5">Escape								</label>
+                            </li>
+                            <li>
+                                <input id="chk6" type="checkbox" class="checkbox" value="007" data-bind="click: function () { return  selectVehicle('chk6') }" />
+                                <label for="chk6">Expedition						</label>
+                            </li>
+                            <li>
+                                <input id="chk7" type="checkbox" class="checkbox" value="006" data-bind="click: function () { return  selectVehicle('chk7') }" />
+                                <label for="chk7">Explorer							</label>
+                            </li>
+                            <li>
+                                <input id="chk8" type="checkbox" class="checkbox" value="008" data-bind="click: function () { return  selectVehicle('chk8') }" />
+                                <label  for="chk8">F-150								  </label>
+                            </li>
+                            <li>
+                                <input id="chk9" type="checkbox" class="checkbox" value="250" data-bind="click: function () { return  selectVehicle('chk9') }" />
+                                <label  for="chk9">Fiesta								</label>
+                            </li>
+
+                            <li>
+                                <input id="chk10" type="checkbox" class="checkbox" value="111" data-bind="click: function () { return  selectVehicle('chk10') }" />
+                                <label  for="chk10">Flex									</label>
+                            </li>
+                            <li>
+                                <input id="chk11" type="checkbox" class="checkbox" value="048" data-bind="click: function () { return  selectVehicle('chk11') }" />
+                                <label for="chk11">Focus 								</label>
+                            </li>
+                            <li>
+                                <input id="chk12" type="checkbox" class="checkbox" value="127" data-bind="click: function () { return  selectVehicle('chk12') }" />
+                                <label for="chk12">Focus Electric				</label>
+                            </li>
+                            <li>
+                                <input id="chk13" type="checkbox" class="checkbox" value="131" data-bind="click: function () { return  selectVehicle('chk13') }" />
+                                <label for="chk13">Focus ST							</label>
+                            </li>
+                            <li>
+                                <input id="chk14" type="checkbox" class="checkbox" value="211" data-bind="click: function () { return  selectVehicle('chk14') }" />
+                                <label for="chk14">Fusion								</label>
+                            </li>
+                            <li>
+                                <input id="chk15" type="checkbox" class="checkbox" value="252" data-bind="click: function () { return  selectVehicle('chk15') }" />
+                                <label for="chk15">Fusion Energi				  </label>
+                            </li>
+                            <li>
+                                <input id="chk16" type="checkbox" class="checkbox" value="251" data-bind="click: function () { return  selectVehicle('chk16') }" />
+                                <label for="chk16">Fusion Hybrid				  </label>
+                            </li>
+                            <li>
+                                <input id="chk17" type="checkbox" class="checkbox" value="002" data-bind="click: function () { return  selectVehicle('chk17') }" />
+                                <label for="chk17">Mustang							  </label>
+                            </li>
+                            <li>
+                                <input id="chk18" type="checkbox" class="checkbox" value="012" data-bind="click: function () { return  selectVehicle('chk18') }" />
+                                <label for="chk18">Super Duty&reg;			  </label>
+                            </li>
+
+                            <li>
+                                <input id="chk19" type="checkbox" class="checkbox" value="109" data-bind="click: function () { return  selectVehicle('chk19') }" />
+                                <label for="chk19">Taurus								</label>
+                            </li>
+                            <li>
+                                <input id="chk20" type="checkbox" class="checkbox" value="328" data-bind="click: function () { return  selectVehicle('chk20') }" />
+                                <label for="chk20">Transit Connect			  </label>
+                            </li>
+                            <li>
+                                <input id="chk21" type="checkbox" class="checkbox" value="133" data-bind="click: function () { return  selectVehicle('chk21') }" />
+                                <label for="chk21">Transit Connect Wagon </label>
+                            </li>
+                            <li>
+                                <input id="chk22" type="checkbox" class="checkbox" value="132" data-bind="click: function () { return  selectVehicle('chk22') }" />
+                                <label for="chk22">Transit							  </label>
+                            </li>
+                            <li>
+                                <input id="chk23" type="checkbox" class="checkbox" value="007" data-bind="click: function () { return  selectVehicle('chk23') }" />
+                                <label for="ch23">2015 Expedition			  </label>
+                            </li>
+                            <li>
+                                <input id="chk24" type="checkbox" class="checkbox" value="008" data-bind="click: function () { return  selectVehicle('chk24') }" />
+                                <label for="chk24">2015 F-150						</label>
+                            </li>
+                            <li>
+                                <input id="chk25" type="checkbox" class="checkbox" value="048" data-bind="click: function () { return  selectVehicle('chk25') }" />
+                                <label for="chk25">2015 Focus						</label>
+                            </li>
+                            <li>
+                                <input id="chk26" type="checkbox" class="checkbox" value="002" data-bind="click: function () { return  selectVehicle('chk26') }" />
+                                <label for="chk26">2015 Mustang					</label>
+                            </li>
+                            <li>
+                                <input id="chk27" type="checkbox" class="checkbox" value="012" data-bind="click: function () { return  selectVehicle('chk27') }" />
+                                <label for="chk27">2015 Super Duty&reg;	</label>
+                            </li>
+                        </ul>
+                        <!--vehicle list -->
+                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                        <hr />
+                        
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-4 columns small-offset-8">
+                        <a href="page-4.html" class="button radius right" data-bind="click: storeData">Next</a>
+                    </div>
+                </div>
+
+            </form>
+
+            <!--FORM ENDS HERE -->
+
+        </div>
     </div>
     <div class="event-identifier">
-    	EVENT ID # / LOCATION
+        <span data-bind="text: id"></span> / <span data-bind="    text: location"></span>   
     </div>
-    
 
-    
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="cordova.js"></script>
-    <script src="statusbar.js"></script>
-    <script src="js/fastclick.js"></script>
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/knockout-3.1.0.js"></script>
+    <script src="Scripts/knockoutCustomBindings.js"></script>
+    <script src="app/survey.js"></script>
+    <script src="app/dataService.js"></script>
+    <script src="app/page3ViewModel.js"></script>
+    <script src="Scripts/foundation.min.js"></script>  
+    <script src="Scripts/fastclick.js"></script>
     <script>
-	    $(function() {
-			    FastClick.attach(document.body);
-			});
-    </script>
+        $(function () {
+            FastClick.attach(document.body);
+            $(document).foundation();
+
+            setTimeout(function () { window.location = "page-1.html"; }, (1000 * 120), null);
+        });
+    </script>  
     <script>
-      $(document).foundation();
-    </script>
-  </body>
+			function BlockMove(event) {
+			// Tell Safari not to move the window.
+			event.preventDefault() ;
+			}
+		</script>
+</body>
 </html>

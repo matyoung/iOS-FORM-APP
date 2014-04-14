@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body id="launch" ontouchmove="BlockMove(event);">
+
+    <div class="row">
+        <div class="small-5 small-centered columns">
+            <br />
+            <br />
+            <img src="img/logo.png" alt="logo">
+        </div>
+    </div>
+    <!-- test commit comment   -->
+    <div class="row">
+        <div class="small-8 small-centered columns clearfix">
+            <br />
+            <br />
+            <br />
+            <h1 class="text-center ">Select Event ID</h1>
+            <br />
+            <br />
+            <br />
+            <hr />
+            <h3 class="text-center">Choose from the list of available event ID's</h3>
+            <p class="text-center">[ if you cannot find your event please choose "UNSPECIFIED"]</p>
+            <hr />
+            <br />
+            <br />
+            <!-- form start -->
+            <form>               
+                 <select data-bind="foreach: events, value: selectedOption">
+                    <optgroup data-bind="attr: { label: label }, foreach: children">
+                        <option data-bind="text: label, option: $data"></option>
+                    </optgroup>
+                </select>                
+            </form>
+            <!-- form end  	 -->
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <p class="text-center"><a href="page-1.html" class="button large radius " data-bind="click: storeData">Launch App</a></p>
+        </div>
+    </div>
+    
+    <div class="row" data-bind="visible: hasLocalRecords">
+        <div class="small-12 columns">
+            <p class="text-center"><a href="page-1.html" class="button large radius alert" data-bind="click: updateServer">Push Records</a></p>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/knockout-3.1.0.js"></script>
+    <script src="Scripts/knockoutCustomBindings.js"></script>
+    <script src="Scripts/foundation.min.js"></script>   
+    <script src="Scripts/fastclick.js"></script>
+    <script src="app/survey.js"></script>
+    <script src="app/dataService.js"></script>
+    <script src="app/launchViewModel.js"></script>
+    <script>
+        $(function () {
+            FastClick.attach(document.body);
+            $(document).foundation();
+        });
+    </script>
+    <script>
+			function BlockMove(event) {
+			// Tell Safari not to move the window.
+			event.preventDefault() ;
+			}
+		</script>
+  
+</body>
+</html>

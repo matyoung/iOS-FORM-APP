@@ -188,5 +188,9 @@ a.close-reveal-modal {
 	letter-spacing: .2em
 }
 
-
-
+/* error styling */
+input.validate-error {
+	border: 3px solid #fff;
+	background: #ff8c8c;
+	
+}

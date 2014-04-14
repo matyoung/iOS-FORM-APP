@@ -1,49 +1,80 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-	  <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
-
 </head>
-  <body id="page-1">
-  
-  <div class="row">
-  	<div class="small-5 small-centered columns"><br /><br />
-  	<img src="img/logo.png" alt="logo">
-  	</div>
-  </div>
-<!-- test commit comment   -->
-  <div class="row">
-  	<div class="small-11 small-centered columns clearfix"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-  		<div class="left"><h1 class="text-center">Ford At Your<br />Fingertips</h1></div>
-			<img class="right" src="img/hand.png" alt="hand" width="140">
-  	</div>
-  </div>
+<body id="page-1" ontouchmove="BlockMove(event);">
 
-  <div class="row">
-  	<div class="small-12 columns"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-			<p class="text-center"><a href="page-2.html" class="button large radius" >Start</a></p>
-  	</div>
-  </div>
-    <div class="event-identifier">
-    	EVENT ID # / LOCATION
+    <div class="row">
+        <div class="small-5 small-centered columns">
+            <br />
+            <br />
+            <img src="img/logo.png" alt="logo">
+        </div>
     </div>
-    
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="cordova.js"></script>
-    <script src="statusbar.js"></script>
-    <script src="js/fastclick.js"></script>
+    <!-- test commit comment   -->
+    <div class="row">
+        <div class="small-11 small-centered columns clearfix">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="left">
+                <h1 class="text-center">Upstate Ford Registration</h1>
+            </div>
+            <!-- <img class="right" src="img/hand.png" alt="hand" width="140"> -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <p class="text-center"><a href="page-2.html" class="button large radius">Start</a></p>
+        </div>
+    </div>
+    <div class="event-identifier">
+        <span data-bind="text: id"></span> / <span data-bind="text: location"></span>   
+    </div>
+
+    <script src="Scripts/jquery-2.1.0.min.js"></script>
+    <script src="Scripts/knockout-3.1.0.js"></script>
+    <script src="Scripts/foundation.min.js"></script>   
+    <script src="Scripts/fastclick.js"></script>
+    <script src="app/dataService.js"></script>
+    <script src="app/page1ViewModel.js"></script>
     <script>
-	    $(function() {
-			    FastClick.attach(document.body);
-			});
-    </script>
+        $(function () {
+            FastClick.attach(document.body);
+            $(document).foundation();
+        });
+    </script> 
     <script>
-      $(document).foundation();
-    </script>
-  </body>
+			function BlockMove(event) {
+			// Tell Safari not to move the window.
+			event.preventDefault() ;
+			}
+		</script>
+</body>
 </html>
